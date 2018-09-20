@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="team.developer.official.dummyjurnal.AbsentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="140dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true">
+
+            <RadioButton
+                android:id="@+id/radioPay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:text="Hadir" />
+
+            <RadioButton
+                android:id="@+id/radioPay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="Tidak Hadir" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="next" />
+
+    </RelativeLayout>
+
+</FrameLayout>
